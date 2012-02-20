@@ -19,11 +19,8 @@ D:\Code\WindowsPh\Nuts_For_Nuts_0.1\helloworldGAME\helloworldGAME\helloworldGAME
 D:\Code\WindowsPh\Nuts_For_Nuts_0.1\helloworldGAME\helloworldGAME\helloworldGAME\obj\Windows Phone\Debug\XapCacheFile.xml
 C:\Users\Cordle\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\Content\PhoneGameThumb.xnb
 C:\Users\Cordle\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\Content\nut.xnb
-C:\Users\Cordle\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\Content\squirrel_l.xnb
-C:\Users\Cordle\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\Content\squirrel_r.xnb
 C:\Users\Cordle\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\Content\othertree.xnb
 C:\Users\Cordle\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\Content\Windows Ding.xnb
-C:\Users\Cordle\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\Content\Arial.xnb
 C:\Users\Cordle\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\helloworldGAME.dll
 C:\Users\Cordle\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\helloworldGAME.pdb
 C:\Users\Cordle\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\obj\Windows Phone\Debug\ResolveAssemblyReference.cache
@@ -42,3 +39,7 @@ C:\Users\Cordle\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows
 C:\Users\Cordle\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\Content\squirrel_feet.xnb
 C:\Users\Cordle\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\Content\new_squirrel_down.xnb
 C:\Users\Cordle\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\Content\new_squirrel_up.xnb
+C:\Users\Cordle\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\Content\ComicSans.xnb
+C:\Users\Cordle\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\Content\new_squirrel_eating.xnb
+C:\Users\Cordle\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\Content\pinecone.xnb
+C:\Users\Cordle\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\Content\home.xnb

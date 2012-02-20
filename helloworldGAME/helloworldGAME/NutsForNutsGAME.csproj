@@ -66,13 +66,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GameBoard.cs" />
+    <Compile Include="Hero.cs" />
     <Compile Include="ImageLibrary.cs" />
     <Compile Include="PineCone.cs" />
     <Compile Include="Nut.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sprite.cs" />
-    <Compile Include="SquirrelAnimation.cs" />
-    <Compile Include="SquirrelBodyAnimation.cs" />
+    <Compile Include="UI.cs" />
     <None Include="Properties\AppManifest.xml">
       <XnaPlatformSpecific>true</XnaPlatformSpecific>
     </None>

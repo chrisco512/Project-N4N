@@ -1,10 +1,7 @@
 Content\PhoneGameThumb.xnb
 Content\nut.xnb
-Content\squirrel_l.xnb
-Content\squirrel_r.xnb
 Content\othertree.xnb
 Content\Windows Ding.xnb
-Content\Arial.xnb
 Content\squirrel_walking.xnb
 Content\nut2.xnb
 Content\squirrel_catch.xnb
@@ -12,3 +9,7 @@ Content\squirrel_eating.xnb
 Content\squirrel_feet.xnb
 Content\new_squirrel_down.xnb
 Content\new_squirrel_up.xnb
+Content\ComicSans.xnb
+Content\new_squirrel_eating.xnb
+Content\pinecone.xnb
+Content\home.xnb

@@ -8,7 +8,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cordle\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\Content\PhoneGameThumb.xnb</Output>
-      <Time>2012-01-11T00:40:41.1931301-05:00</Time>
+      <Time>2012-02-19T21:33:43-05:00</Time>
     </Item>
     <Item>
       <Source>nut.png</Source>
@@ -20,31 +20,13 @@
       <Time>2012-02-09T19:02:20.8157232-05:00</Time>
     </Item>
     <Item>
-      <Source>squirrel_l.png</Source>
-      <Name>squirrel_l</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Cordle\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\Content\squirrel_l.xnb</Output>
-      <Time>2012-01-21T18:55:42.1371935-05:00</Time>
-    </Item>
-    <Item>
-      <Source>squirrel_r.png</Source>
-      <Name>squirrel_r</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Cordle\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\Content\squirrel_r.xnb</Output>
-      <Time>2012-01-21T18:55:54.4038951-05:00</Time>
-    </Item>
-    <Item>
       <Source>othertree.png</Source>
       <Name>othertree</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Cordle\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\Content\othertree.xnb</Output>
-      <Time>2012-02-05T16:25:01.0040651-05:00</Time>
+      <Time>2012-02-19T20:56:42-05:00</Time>
     </Item>
     <Item>
       <Source>Windows Ding.wav</Source>
@@ -54,15 +36,6 @@
       <Options>None</Options>
       <Output>C:\Users\Cordle\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\Content\Windows Ding.xnb</Output>
       <Time>2012-01-11T00:43:36.831176-05:00</Time>
-    </Item>
-    <Item>
-      <Source>Arial.spritefont</Source>
-      <Name>Arial</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Cordle\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\Content\Arial.xnb</Output>
-      <Time>2012-01-21T19:50:55.3696996-05:00</Time>
     </Item>
     <Item>
       <Source>squirrel_walking.png</Source>
@@ -126,6 +99,42 @@
       <Options>None</Options>
       <Output>C:\Users\Cordle\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\Content\new_squirrel_up.xnb</Output>
       <Time>2012-02-14T18:16:46.7320259-05:00</Time>
+    </Item>
+    <Item>
+      <Source>ComicSans.spritefont</Source>
+      <Name>ComicSans</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Cordle\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\Content\ComicSans.xnb</Output>
+      <Time>2012-02-19T21:14:47.7929662-05:00</Time>
+    </Item>
+    <Item>
+      <Source>new_squirrel_eating.png</Source>
+      <Name>new_squirrel_eating</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Cordle\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\Content\new_squirrel_eating.xnb</Output>
+      <Time>2012-02-14T17:37:50-05:00</Time>
+    </Item>
+    <Item>
+      <Source>pinecone.png</Source>
+      <Name>pinecone</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Cordle\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\Content\pinecone.xnb</Output>
+      <Time>2012-02-14T18:04:07-05:00</Time>
+    </Item>
+    <Item>
+      <Source>home.png</Source>
+      <Name>home</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Cordle\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\Content\home.xnb</Output>
+      <Time>2012-02-19T20:57:41-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
