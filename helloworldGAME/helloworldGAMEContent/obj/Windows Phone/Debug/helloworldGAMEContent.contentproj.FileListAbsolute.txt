@@ -1,0 +1,4 @@
+C:\Users\Cordle\Documents\College\MS PHone\helloworldGAME\helloworldGAME\helloworldGAMEContent\obj\Windows Phone\Debug\ResolveAssemblyReference.cache
+C:\Users\Cordle\Documents\Code\MS PHone\helloworldGAME\helloworldGAME\helloworldGAMEContent\obj\Windows Phone\Debug\ResolveAssemblyReference.cache
+D:\Dropbox\Dropbox\helloworldGAME\helloworldGAME\helloworldGAMEContent\obj\Windows Phone\Debug\ResolveAssemblyReference.cache
+C:\Users\Cordle\Dropbox\helloworldGAME\helloworldGAME\helloworldGAMEContent\obj\Windows Phone\Debug\ResolveAssemblyReference.cache

@@ -1,0 +1,7 @@
+Content\PhoneGameThumb.xnb
+Content\nut.xnb
+Content\squirrel_l.xnb
+Content\squirrel_r.xnb
+Content\othertree.xnb
+Content\Windows Ding.xnb
+Content\Arial.xnb

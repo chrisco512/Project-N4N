@@ -1,0 +1,50 @@
+C:\Users\Cordle\Documents\College\MS PHone\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\Content\PhoneGameThumb.xnb
+C:\Users\Cordle\Documents\College\MS PHone\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\Content\Windows Ding.xnb
+C:\Users\Cordle\Documents\College\MS PHone\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\helloworldGAME.dll
+C:\Users\Cordle\Documents\College\MS PHone\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\helloworldGAME.pdb
+C:\Users\Cordle\Documents\College\MS PHone\helloworldGAME\helloworldGAME\helloworldGAME\obj\Windows Phone\Debug\ResolveAssemblyReference.cache
+C:\Users\Cordle\Documents\College\MS PHone\helloworldGAME\helloworldGAME\helloworldGAME\obj\Windows Phone\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Cordle\Documents\College\MS PHone\helloworldGAME\helloworldGAME\helloworldGAME\obj\Windows Phone\Debug\helloworldGAME.dll
+C:\Users\Cordle\Documents\College\MS PHone\helloworldGAME\helloworldGAME\helloworldGAME\obj\Windows Phone\Debug\helloworldGAME.pdb
+C:\Users\Cordle\Documents\College\MS PHone\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\AppManifest.xaml
+C:\Users\Cordle\Documents\College\MS PHone\helloworldGAME\helloworldGAME\helloworldGAME\obj\Windows Phone\Debug\WMAppManifest.xml.g
+C:\Users\Cordle\Documents\College\MS PHone\helloworldGAME\helloworldGAME\helloworldGAME\obj\Windows Phone\Debug\WMAppManifest.xml
+bin\Windows Phone\Debug\
+C:\Users\Cordle\Documents\College\MS PHone\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\helloworldGAME.xap
+C:\Users\Cordle\Documents\College\MS PHone\helloworldGAME\helloworldGAME\helloworldGAME\obj\Windows Phone\Debug\XapCacheFile.xml
+C:\Users\Cordle\Documents\Code\MS PHone\helloworldGAME\helloworldGAME\helloworldGAME\obj\Windows Phone\Debug\ResolveAssemblyReference.cache
+C:\Users\Cordle\Documents\Code\MS PHone\helloworldGAME\helloworldGAME\helloworldGAME\obj\Windows Phone\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Cordle\Documents\Code\MS PHone\helloworldGAME\helloworldGAME\helloworldGAME\obj\Windows Phone\Debug\helloworldGAME.dll
+C:\Users\Cordle\Documents\Code\MS PHone\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\Content\PhoneGameThumb.xnb
+C:\Users\Cordle\Documents\Code\MS PHone\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\Content\Windows Ding.xnb
+C:\Users\Cordle\Documents\Code\MS PHone\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\helloworldGAME.dll
+C:\Users\Cordle\Documents\Code\MS PHone\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\helloworldGAME.pdb
+C:\Users\Cordle\Documents\Code\MS PHone\helloworldGAME\helloworldGAME\helloworldGAME\obj\Windows Phone\Debug\helloworldGAME.pdb
+C:\Users\Cordle\Documents\Code\MS PHone\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\AppManifest.xaml
+C:\Users\Cordle\Documents\Code\MS PHone\helloworldGAME\helloworldGAME\helloworldGAME\obj\Windows Phone\Debug\WMAppManifest.xml.g
+C:\Users\Cordle\Documents\Code\MS PHone\helloworldGAME\helloworldGAME\helloworldGAME\obj\Windows Phone\Debug\WMAppManifest.xml
+C:\Users\Cordle\Documents\Code\MS PHone\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\helloworldGAME.xap
+C:\Users\Cordle\Documents\Code\MS PHone\helloworldGAME\helloworldGAME\helloworldGAME\obj\Windows Phone\Debug\XapCacheFile.xml
+C:\Users\Cordle\Documents\Code\MS PHone\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\Content\nut.xnb
+C:\Users\Cordle\Documents\Code\MS PHone\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\Content\squirrel_l.xnb
+C:\Users\Cordle\Documents\Code\MS PHone\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\Content\squirrel_r.xnb
+C:\Users\Cordle\Documents\Code\MS PHone\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\Content\othertree.xnb
+C:\Users\Cordle\Documents\Code\MS PHone\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\Content\Arial.xnb
+D:\Dropbox\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\Content\PhoneGameThumb.xnb
+D:\Dropbox\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\Content\nut.xnb
+D:\Dropbox\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\Content\squirrel_l.xnb
+D:\Dropbox\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\Content\squirrel_r.xnb
+D:\Dropbox\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\Content\othertree.xnb
+D:\Dropbox\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\Content\Windows Ding.xnb
+D:\Dropbox\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\Content\Arial.xnb
+D:\Dropbox\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\helloworldGAME.dll
+D:\Dropbox\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\helloworldGAME.pdb
+D:\Dropbox\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\obj\Windows Phone\Debug\ResolveAssemblyReference.cache
+D:\Dropbox\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\obj\Windows Phone\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\Dropbox\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\obj\Windows Phone\Debug\helloworldGAME.dll
+D:\Dropbox\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\obj\Windows Phone\Debug\helloworldGAME.pdb
+D:\Dropbox\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\AppManifest.xaml
+D:\Dropbox\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\obj\Windows Phone\Debug\WMAppManifest.xml.g
+D:\Dropbox\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\obj\Windows Phone\Debug\WMAppManifest.xml
+D:\Dropbox\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\helloworldGAME.xap
+D:\Dropbox\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\obj\Windows Phone\Debug\XapCacheFile.xml

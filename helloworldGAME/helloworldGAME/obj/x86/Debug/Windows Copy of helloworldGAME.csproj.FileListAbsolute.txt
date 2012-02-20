@@ -1,0 +1,2 @@
+D:\Dropbox\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Dropbox\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
