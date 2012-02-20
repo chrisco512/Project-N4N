@@ -42,7 +42,7 @@ namespace helloworldGAME
 
             //sets up event, to affect frequency of nuts, adjust update interval...perhaps add randomness?
             GameTimer nutsFalling = new GameTimer();
-            nutsFalling.UpdateInterval = TimeSpan.FromSeconds(2);
+            nutsFalling.UpdateInterval = TimeSpan.FromSeconds(.1);
             nutsFalling.Update += new EventHandler<GameTimerEventArgs>(generateNuts);
             nutsFalling.Start();
         }
@@ -50,10 +50,10 @@ namespace helloworldGAME
         void generateNuts(object sender, GameTimerEventArgs e)
         {
             int dropLane = rand.Next(0, 7);
-            for (int i = 0; i < 7; i++)
-            {
-                currentNuts.Add(new Nut(20, Lanes[i]));
-            }
+            //for (int i = 0; i < 7; i++)
+            //{
+                currentNuts.Add(new Nut(20, Lanes[dropLane]));
+            //}
         }
 
         //fire if the nut is x > height of the box and the nut's y is within the width of the box

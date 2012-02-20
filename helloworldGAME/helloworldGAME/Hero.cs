@@ -30,7 +30,7 @@ namespace NutsForNutsGAME
             this.MinY = 0;
             this.MaxX = MaxX;
             this.MinX = 0;
-            setSpeed( new Vector2(0f, 500f) );
+            setSpeed( new Vector2(0f, 1000f) );
             this.location.X = MaxX - 120 - 100;
             this.destination.X = this.location.X;
             this.location.Y = MaxY / 2;

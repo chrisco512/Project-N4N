@@ -26,7 +26,8 @@
     <SupportedCultures>
     </SupportedCultures>
     <ApplicationIcon>Game.ico</ApplicationIcon>
-    <Thumbnail>PhoneGameThumb.png</Thumbnail>
+    <Thumbnail>
+    </Thumbnail>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Windows Phone' ">
     <DebugSymbols>true</DebugSymbols>
@@ -84,9 +85,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />
-    <Content Include="PhoneGameThumb.png">
-      <XnaPlatformSpecific>true</XnaPlatformSpecific>
-    </Content>
     <Content Include="Background.png">
       <XnaPlatformSpecific>true</XnaPlatformSpecific>
     </Content>

@@ -137,7 +137,7 @@ namespace NutsForNutsGAME
             //move nuts on screen
             foreach (Nut nt in board.currentNuts)
             {
-                nt.Speed.X += (50 * (float)gameTime.ElapsedGameTime.TotalSeconds);
+                nt.Speed.X += (3200 * (float)gameTime.ElapsedGameTime.TotalSeconds);
                 nt.Position += nt.Speed * (float)gameTime.ElapsedGameTime.TotalSeconds;
                 if (board.currentNuts.Count > 0 && nt.Position.X > graphics.GraphicsDevice.Viewport.Width)
                 {
