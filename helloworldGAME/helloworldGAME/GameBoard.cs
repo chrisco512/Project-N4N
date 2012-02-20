@@ -56,7 +56,29 @@ namespace helloworldGAME
             }
         }
 
+        //fire if the nut is x > height of the box and the nut's y is within the width of the box
+        public void nutCatch( Vector2 heroLocation, ref uint score )
+        {
+            if ( this.currentNuts.Count > 0)
+            {
+                foreach (Nut nt in this.currentNuts)
+                {
+                    if (nt.Position.X > heroLocation.X - 50 && //top check
+                        nt.Position.X < heroLocation.X + 120 && //bottom check
+                        nt.Position.Y < heroLocation.Y + 65 && //left check
+                        nt.Position.Y > heroLocation.Y - 35) //right check
+                    {
 
+                        this.removeNuts.Add(nt);
+                        score++;
+                    } //end if
+                } //end for
+            } //end if
+            foreach (Nut nt in this.removeNuts)
+            {
+                this.currentNuts.Remove(nt);
+            }
+        } //end nutCatch
 
         
     }

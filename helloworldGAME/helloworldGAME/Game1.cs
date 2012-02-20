@@ -55,7 +55,7 @@ namespace NutsForNutsGAME
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
 
-            squirrel = new Hero();
+           
 
             // Frame rate is 30 fps by default for Windows Phone.
             TargetElapsedTime = TimeSpan.FromTicks(333333);
@@ -73,8 +73,8 @@ namespace NutsForNutsGAME
         /// </summary>
         protected override void Initialize()
         {
+            squirrel = new Hero(graphics.GraphicsDevice.Viewport.Width, graphics.GraphicsDevice.Viewport.Height);
             displayWidth = graphics.GraphicsDevice.Viewport.Height;
-            squirrel.setMaxY(displayWidth);
             board = new GameBoard(displayWidth);
             
             // TODO: Add your initialization logic here
@@ -151,39 +151,16 @@ namespace NutsForNutsGAME
             }
 
             // check for catches
-            nutCatch();
             // Move the sprite around.
             squirrel.move( gameTime );
             System.Diagnostics.Debug.WriteLine("squirrelPos: " + squirrel.getLocation().Y + " goToPos: " + squirrel.getDestination().X + "," + squirrel.getDestination().Y + " spriteSpreed: " + squirrel.getSpeed() );
-
+            board.nutCatch( squirrel.getLocation(), ref score);
             squirrel_feet.Progress(1);
             squirrel_body.Progress(1);
             base.Update(gameTime);
         }
         
-        //fire if the nut is x > height of the box and the nut's y is within the width of the box
-        void nutCatch()
-        {
-            if( board.currentNuts.Count > 0 ) {
-                foreach (Nut nt in board.currentNuts)
-                {
-                    if (nt.Position.X > squirrel.getLocation().X - 50 && 
-                        nt.Position.X < squirrel.getLocation().X + 120 &&
-                        nt.Position.Y < squirrel.getLocation().Y + 100 &&
-                        nt.Position.Y > squirrel.getLocation().Y - 50 ) //fix this to inc sq height
-                    {
-                        
-                            board.removeNuts.Add(nt);
-                            score++;
-                    }
-                }
-                
-            }
-            foreach (Nut nt in board.removeNuts)
-            {
-                board.currentNuts.Remove(nt);
-            }
-        }
+        
 
         /// <summary>
         /// This is called when the game should draw itself.
