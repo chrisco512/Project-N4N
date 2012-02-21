@@ -43,9 +43,3 @@ C:\Users\Cordle\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows
 C:\Users\Cordle\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\Content\new_squirrel_eating.xnb
 C:\Users\Cordle\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\Content\pinecone.xnb
 C:\Users\Cordle\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\Content\home.xnb
-C:\Users\Cordle\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\helloworldGAME.xap
-C:\Users\Cordle\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\obj\Windows Phone\Debug\XapCacheFile.xml
-C:\Users\Cordle\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\bin\Windows Phone\Debug\AppManifest.xaml
-C:\Users\Cordle\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\obj\Windows Phone\Debug\WMAppManifest.xml.g
-C:\Users\Cordle\Dropbox\helloworldGAME\helloworldGAME\helloworldGAME\obj\Windows Phone\Debug\WMAppManifest.xml
-bin\Windows Phone\Debug\

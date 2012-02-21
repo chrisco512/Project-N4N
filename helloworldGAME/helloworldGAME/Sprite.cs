@@ -17,7 +17,6 @@ namespace NutsForNutsGAME
         private float rotation = 0f, scale = 1f;
         private Vector2 origin;
 
-
         public Sprite(Texture2D texture, int frames, int timeout, int width, int height, int padX, int padY)
         {
             this.texture = texture;

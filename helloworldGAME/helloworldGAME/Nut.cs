@@ -21,12 +21,12 @@ namespace helloworldGAME
         public float Acceleration;
         public bool badForYou;
 
-        public Nut(float x, float y, bool badForYou)
+        public Nut(float x, float y, bool badForYou, float acceleration )
         {
-            Position = new Vector2(0, y);
-            Speed = new Vector2(0f, 0f);
+            this.Position = new Vector2(0, y);
+            this.Speed = new Vector2(0f, 0f);
             this.badForYou = badForYou;
-            Acceleration = 400f;
+            this.Acceleration = acceleration;
         }
     }
 }

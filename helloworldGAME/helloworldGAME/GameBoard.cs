@@ -20,9 +20,12 @@ namespace helloworldGAME
         public int laneCount = 7; //number of lanes
         public List<Nut> removeNutList; //remove nuts
         public List<Nut> currentNutList; //generate nuts
-        //public List<PineCone> removePineCones; //remove pinecones
-        //public List<PineCone> currentPineCones; //generate pinecones
+        public uint level = 0;
         Random rand; //random number generator
+        float nutAcceleration = 50f;
+        float nutFrequency = 2.0f;
+        float levelFrequency = 60f;
+        GameTimer nutsFalling, levelTimer;
 
         //must pass lanewidth from Game1 object
         public GameBoard( int displayWidth ) {
@@ -41,37 +44,59 @@ namespace helloworldGAME
             //this.removePineCones = new List<PineCone>();
 
             //sets up event, to affect frequency of nuts, adjust update interval...perhaps add randomness?
-            GameTimer nutsFalling = new GameTimer();
-            nutsFalling.UpdateInterval = TimeSpan.FromSeconds(.5);
+            this.nutsFalling = new GameTimer();
+            nutsFalling.UpdateInterval = TimeSpan.FromSeconds(nutFrequency);
             nutsFalling.Update += new EventHandler<GameTimerEventArgs>(generateNuts);
             nutsFalling.Start();
+
+            //sets up level up timer
+            this.levelTimer = new GameTimer();
+            levelTimer.UpdateInterval = TimeSpan.FromSeconds(levelFrequency);
+            levelTimer.Update += new EventHandler<GameTimerEventArgs>(levelUp);
+            levelTimer.Start();
         }
 
         void generateNuts(object sender, GameTimerEventArgs e)
         {
             int dropLane = rand.Next(0, 7);
             int pineCheck = rand.Next(0, 7);
-            if (pineCheck > 1)
-                currentNutList.Add(new Nut(20, Lanes[dropLane], true));
+            if (pineCheck > 4)
+                currentNutList.Add(new Nut(20, Lanes[dropLane], true, nutAcceleration));
             else
-                currentNutList.Add(new Nut(20, Lanes[dropLane], false));
+                currentNutList.Add(new Nut(20, Lanes[dropLane], false, nutAcceleration));
         }
 
         //fire if the nut is x > height of the box and the nut's y is within the width of the box
-        public void nutCatch( Vector2 heroLocation, ref uint score )
+        public void nutCatch( Vector2 heroLocation, ref uint score, ref uint lives )
         {
             if ( this.currentNutList.Count > 0)
             {
                 foreach (Nut nt in this.currentNutList)
                 {
-                    if (nt.Position.X > heroLocation.X - 50 && //top check
+                    //if its a pinecone, decrement lives
+                    if (nt.badForYou)
+                    {
+                        if (nt.Position.X > heroLocation.X - 35 && //top check
+                        nt.Position.X < heroLocation.X + 120 && //bottom check
+                        nt.Position.Y < heroLocation.Y + 55 && //left check
+                        nt.Position.Y > heroLocation.Y - 35) //right check
+                        {
+                            this.removeNutList.Add(nt);
+                            lives--;
+                        } //end if
+                    }
+                    //if its a nut, inc. score
+                    else
+                    {
+                        if (nt.Position.X > heroLocation.X - 50 && //top check
                         nt.Position.X < heroLocation.X + 120 && //bottom check
                         nt.Position.Y < heroLocation.Y + 65 && //left check
                         nt.Position.Y > heroLocation.Y - 35) //right check
-                    {
-                        this.removeNutList.Add(nt);
-                        score++;
-                    } //end if
+                        {
+                            this.removeNutList.Add(nt);
+                            score++;
+                        } //end if
+                    }
                 } //end for
             } //end if
             foreach (Nut nt in this.removeNutList)
@@ -101,6 +126,18 @@ namespace helloworldGAME
             {
                 currentNutList.Remove(nt);
             }
+        }
+
+        void levelUp(object sender, GameTimerEventArgs e)
+        {
+            level++;
+            nutAcceleration *= 1.2f;
+            nutFrequency *= 0.75f;
+            nutsFalling.UpdateInterval = TimeSpan.FromSeconds(nutFrequency);
+            //implement tick-tock
+            //increase drop frequency
+            //increase nut speed
+            //increase pinecone:nut ratio
         }
     }
 }

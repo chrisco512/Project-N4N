@@ -25,10 +25,13 @@ namespace NutsForNutsGAME
         int displayHeight;
 
         /* Declare variables */
-        //for onscreen score
+        //for onscreen score & lives
         uint score = 0;
+        uint lives = 3;
         SpriteFont scoreText;
-        Vector2 fontPos;
+        Vector2 scorePos;
+        SpriteFont livesText;
+        Vector2 livesPos;
 
         //for graphics control
         GraphicsDeviceManager graphics;
@@ -93,7 +96,9 @@ namespace NutsForNutsGAME
 
             //score style and location
             scoreText = Content.Load<SpriteFont>("ComicSans");         
-            fontPos = new Vector2( 20f, 20f);
+            scorePos = new Vector2( 20f, 20f);
+            livesText = Content.Load<SpriteFont>("ComicSans");
+            livesPos = new Vector2(20f, displayWidth - 20f);
 
             //animation textures
             squirrelTexture_Feet = Content.Load<Texture2D>("new_squirrel_down");
@@ -144,7 +149,7 @@ namespace NutsForNutsGAME
             // Move the sprite around.
             squirrel.move( gameTime );
             // check for catches
-            board.nutCatch( squirrel.getLocation(), ref score);
+            board.nutCatch( squirrel.getLocation(), ref score, ref lives);
             // update animations
             squirrel_feet.Progress(1);
             squirrel_body.Progress(1);
@@ -158,10 +163,11 @@ namespace NutsForNutsGAME
         protected override void Draw(GameTime gameTime)
         {
             graphics.GraphicsDevice.Clear(Color.White);
-            
+            //draw bg
             spriteBatch.Begin(SpriteSortMode.BackToFront, BlendState.AlphaBlend);
             spriteBatch.Draw(bgTexture, bgRect, Color.White);
             spriteBatch.End();
+
             // Draw the sprite.
             spriteBatch.Begin (SpriteSortMode.BackToFront, BlendState.AlphaBlend );
             squirrel_feet.Draw( spriteBatch, new Vector2( squirrel.getLocation().X + 60, squirrel.getLocation().Y + 50 ), 0, 0 );
@@ -180,15 +186,27 @@ namespace NutsForNutsGAME
                 ImageLibrary.DrawRectangle(graphics.GraphicsDevice, spriteBatch, new Rectangle( (int)nt.Position.X, (int)nt.Position.Y, nutTexture_L.Height, nutTexture_L.Width), Color.White);
                 spriteBatch.End();
             }
+
             //BEGIN score draw
             spriteBatch.Begin();
-            // score string
-            string output = "" + score;
-            // Find the center of the string
-            Vector2 FontOrigin = scoreText.MeasureString(output) / 2;
-            fontPos.Y = scoreText.MeasureString(output).Y + 10;
+            string scoreOut = "" + score; // score string
+            Vector2 FontOrigin = scoreText.MeasureString(scoreOut) / 2; // Find the center of the string
+            scorePos.Y = scoreText.MeasureString(scoreOut).Y + 10;
+
             // Draw the string
-            spriteBatch.DrawString(scoreText, output, fontPos, Color.Red,
+            spriteBatch.DrawString(scoreText, scoreOut, scorePos, Color.Red,
+                -1.57f, FontOrigin, 1.0f, SpriteEffects.None, 0.5f);
+            spriteBatch.End();
+            //END score draw
+
+            //BEGIN lives draw
+            spriteBatch.Begin();
+            string livesOut = "" + lives; // lives string
+            FontOrigin = livesText.MeasureString( livesOut ) / 2; // Find the center of the string
+            livesPos.Y = displayWidth - livesText.MeasureString( livesOut ).Y;
+
+            // Draw the string
+            spriteBatch.DrawString(livesText, livesOut, livesPos, Color.White,
                 -1.57f, FontOrigin, 1.0f, SpriteEffects.None, 0.5f);
             spriteBatch.End();
             //END score draw
