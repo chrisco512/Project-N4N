@@ -18,11 +18,15 @@ namespace helloworldGAME
     {
         public Vector2 Position;
         public Vector2 Speed;
+        public float Acceleration;
+        public bool badForYou;
 
-        public Nut(float x, float y)
+        public Nut(float x, float y, bool badForYou)
         {
             Position = new Vector2(0, y);
             Speed = new Vector2(0f, 0f);
+            this.badForYou = badForYou;
+            Acceleration = 400f;
         }
     }
 }

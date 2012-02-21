@@ -22,6 +22,7 @@ namespace NutsForNutsGAME
     {
         GameBoard board;
         int displayWidth;
+        int displayHeight;
 
         /* Declare variables */
         //for onscreen score
@@ -48,6 +49,8 @@ namespace NutsForNutsGAME
         private Sprite squirrel_feet;
         private Sprite squirrel_body;
         private Sprite nut_image;
+        private Texture2D pineConeTexture;
+        private Sprite pc_image;
             
         //constructor
         public Game1()
@@ -55,14 +58,11 @@ namespace NutsForNutsGAME
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
 
-           
-
             // Frame rate is 30 fps by default for Windows Phone.
             TargetElapsedTime = TimeSpan.FromTicks(333333);
 
             // Extend battery life under lock.
             InactiveSleepTime = TimeSpan.FromSeconds(1);
-
         }
 
         /// <summary>
@@ -75,6 +75,7 @@ namespace NutsForNutsGAME
         {
             squirrel = new Hero(graphics.GraphicsDevice.Viewport.Width, graphics.GraphicsDevice.Viewport.Height);
             displayWidth = graphics.GraphicsDevice.Viewport.Height;
+            displayHeight = graphics.GraphicsDevice.Viewport.Width;
             board = new GameBoard(displayWidth);
             
             // TODO: Add your initialization logic here
@@ -109,6 +110,10 @@ namespace NutsForNutsGAME
             ImageLibrary.ConvertTransparentPixels(nutTexture_L);
             nut_image = new Sprite(nutTexture_L, 1, 1, 70, 70, 0, 0);
 
+            pineConeTexture = Content.Load<Texture2D>("pinecone");
+            ImageLibrary.ConvertTransparentPixels(pineConeTexture);
+            pc_image = new Sprite(pineConeTexture, 1, 1, 70, 70, 0, 0);
+
             bgTexture = Content.Load<Texture2D>("othertree");
             bgRect = new Rectangle(0, 0, graphics.GraphicsDevice.Viewport.Width, graphics.GraphicsDevice.Viewport.Height);
 
@@ -133,34 +138,18 @@ namespace NutsForNutsGAME
             // Allow the game to exit.
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
-            
-            //move nuts on screen
-            foreach (Nut nt in board.currentNuts)
-            {
-                nt.Speed.X += (3200 * (float)gameTime.ElapsedGameTime.TotalSeconds);
-                nt.Position += nt.Speed * (float)gameTime.ElapsedGameTime.TotalSeconds;
-                if (board.currentNuts.Count > 0 && nt.Position.X > graphics.GraphicsDevice.Viewport.Width)
-                {
-                    board.removeNuts.Add(nt);
-                }
-            }
-
-            //remove nuts that have fallen off screen
-            foreach( Nut nt in board.removeNuts ) {
-                board.currentNuts.Remove( nt );
-            }
-
-            // check for catches
+            // move & remove nuts
+            board.moveNuts( gameTime, displayHeight );
+            board.removeNuts();
             // Move the sprite around.
             squirrel.move( gameTime );
-            System.Diagnostics.Debug.WriteLine("squirrelPos: " + squirrel.getLocation().Y + " goToPos: " + squirrel.getDestination().X + "," + squirrel.getDestination().Y + " spriteSpreed: " + squirrel.getSpeed() );
+            // check for catches
             board.nutCatch( squirrel.getLocation(), ref score);
+            // update animations
             squirrel_feet.Progress(1);
             squirrel_body.Progress(1);
             base.Update(gameTime);
         }
-        
-        
 
         /// <summary>
         /// This is called when the game should draw itself.
@@ -174,15 +163,19 @@ namespace NutsForNutsGAME
             spriteBatch.Draw(bgTexture, bgRect, Color.White);
             spriteBatch.End();
             // Draw the sprite.
-            spriteBatch.Begin(SpriteSortMode.BackToFront, BlendState.AlphaBlend);
-            squirrel_feet.Draw(spriteBatch, new Vector2( squirrel.getLocation().X + 60, squirrel.getLocation().Y + 50), 0, 0 );
-            squirrel_body.Draw(spriteBatch, new Vector2(squirrel.getLocation().X + 60, squirrel.getLocation().Y + 50), 0, 0);
+            spriteBatch.Begin (SpriteSortMode.BackToFront, BlendState.AlphaBlend );
+            squirrel_feet.Draw( spriteBatch, new Vector2( squirrel.getLocation().X + 60, squirrel.getLocation().Y + 50 ), 0, 0 );
+            squirrel_body.Draw( spriteBatch, new Vector2( squirrel.getLocation().X + 60, squirrel.getLocation().Y + 50 ), 0, 0 );
             ImageLibrary.DrawRectangle(graphics.GraphicsDevice, spriteBatch, new Rectangle((int)squirrel.getLocation().X, (int)squirrel.getLocation().Y, 120, 100), Color.White);
             spriteBatch.End();
 
-            foreach( Nut nt in board.currentNuts ) {
+            //draw nuts
+            foreach( Nut nt in board.currentNutList ) {
                 spriteBatch.Begin(SpriteSortMode.BackToFront, BlendState.AlphaBlend);
-                nut_image.Draw(spriteBatch, new Vector2(nt.Position.X + 36, nt.Position.Y + 36), 0, 0);
+                if( nt.badForYou )
+                    pc_image.Draw(spriteBatch, new Vector2(nt.Position.X + 36, nt.Position.Y + 36), 0, 0);
+                else
+                    nut_image.Draw(spriteBatch, new Vector2(nt.Position.X + 36, nt.Position.Y + 36), 0, 0);
                 //spriteBatch.Draw(nutTexture_L, nt.Position, Color.White);
                 ImageLibrary.DrawRectangle(graphics.GraphicsDevice, spriteBatch, new Rectangle( (int)nt.Position.X, (int)nt.Position.Y, nutTexture_L.Height, nutTexture_L.Width), Color.White);
                 spriteBatch.End();
